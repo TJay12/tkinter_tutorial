@@ -5,7 +5,7 @@ import tkinter as tk
 # Create the main window
 root = tk.Tk()
 # This creates the main window for your app.
-# It’s your "root" container. Everything goes inside this
+# It’s your "layout_pack" container. Everything goes inside this
 
 # Set a title
 root.title("My First Tkinter App")
@@ -17,7 +17,7 @@ root.geometry("300x200") # Width x Height
 # <--- Add some widgets --->
 # Label
 label = tk.Label(root, text="Hello, Tkinter!")
-# tk.Label(root, ...) creates a label inside the root window.
+# tk.Label(layout_pack, ...) creates a label inside the layout_pack window.
 # text="Hello" is the message it shows.
 label.pack()
 # .pack() tells it to show up, without a layout method like pack(), widgets won’t be visible.
@@ -25,7 +25,7 @@ label.pack()
 # Entry field
 entry = tk.Entry(root)
 # tk.Entry(...) creates a single-line text box.
-# root is the parent (the main window).
+# layout_pack is the parent (the main window).
 entry.pack()
 # .pack() makes it appear on the screen.
 
